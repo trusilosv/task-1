@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(132, 97, 212);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-grow: 1;
+    position: relative;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    margin: 10px;
+    background-color: rgb(83, 25, 25);
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(88, 184, 44);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
