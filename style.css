@@ -2,6 +2,8 @@ body {
     background-color: rgb(132, 97, 212);
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
 }
 
 .card {
@@ -10,6 +12,7 @@ body {
     min-width: 200px;
     max-width: 400px;
     min-height: 200px;
+    max-height: 400px;
     margin: 10px;
     background-color: rgb(83, 25, 25);
 }
