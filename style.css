@@ -1,8 +1,7 @@
-body {
+.flex {
     background-color: rgb(132, 97, 212);
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
     margin: 0;
 }
 
@@ -15,31 +14,61 @@ body {
     max-height: 400px;
     margin: 10px;
     background-color: rgb(83, 25, 25);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 30px;
 }
 
-.close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 32px;
-    height: 32px;
-    opacity: 1;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 5px;
+    max-height: 200px;
 }
 
-.close:before,
-.close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: rgb(88, 184, 44);
+p.header__p {
+    font-size: 15vw;
+    margin: 0;
+    font-weight: 700;
 }
 
-.close:before {
-    transform: rotate(45deg);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(200px, 400px));
 }
 
-.close:after {
-    transform: rotate(-45deg);
+@media(max-width:1340px) {
+    .grid {
+        grid-template-columns: repeat(6, minmax(200px, 400px));
+    }
+}
+
+@media(max-width:1117px) {
+    .grid {
+        grid-template-columns: repeat(5, minmax(200px, 400px));
+    }
+}
+
+@media(max-width:1117px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(200px, 400px));
+    }
+}
+
+@media(max-width:880px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(200px, 400px));
+    }
+}
+
+@media(max-width:680px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(200px, 400px));
+    }
+}
+
+@media(max-width:460px) {
+    .grid {
+        grid-template-columns: minmax(200px, 400px)
+    }
 }
