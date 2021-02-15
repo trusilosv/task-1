@@ -35,38 +35,38 @@ p.header__p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-columns: repeat(7, 1fr);
     min-height: calc(100vh - 15vw);
     grid-auto-flow: dense;
 }
 
 @media(max-width:1540px) {
     .grid {
-        grid-template-columns: repeat(6, auto);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 
 @media(max-width:1317px) {
     .grid {
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 @media(max-width:1117px) {
     .grid {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media(max-width:880px) {
     .grid {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media(max-width:680px) {
     .grid {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
