@@ -1,12 +1,9 @@
-body {
-    height: 100vh;
-}
-
 .flex {
     background-color: rgb(132, 97, 212);
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    min-height: calc(100vh - 15vw);
 }
 
 .card {
@@ -38,36 +35,38 @@ p.header__p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, minmax(200px, 400px));
+    grid-template-columns: repeat(7, auto);
+    min-height: calc(100vh - 15vw);
+    grid-auto-flow: dense;
 }
 
 @media(max-width:1540px) {
     .grid {
-        grid-template-columns: repeat(6, minmax(200px, 400px));
+        grid-template-columns: repeat(6, auto);
     }
 }
 
 @media(max-width:1317px) {
     .grid {
-        grid-template-columns: repeat(5, minmax(200px, 400px));
+        grid-template-columns: repeat(5, auto);
     }
 }
 
 @media(max-width:1117px) {
     .grid {
-        grid-template-columns: repeat(4, minmax(200px, 400px));
+        grid-template-columns: repeat(4, auto);
     }
 }
 
 @media(max-width:880px) {
     .grid {
-        grid-template-columns: repeat(3, minmax(200px, 400px));
+        grid-template-columns: repeat(3, auto);
     }
 }
 
 @media(max-width:680px) {
     .grid {
-        grid-template-columns: repeat(2, minmax(200px, 400px));
+        grid-template-columns: repeat(2, auto);
     }
 }
 

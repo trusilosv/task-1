@@ -34,7 +34,7 @@ input[type="checkbox"]:checked+.ht-ui-check .handle .faces {
 
 .ht-ui-check {
     width: 21.5vw;
-    height: 15vw;
+    height: 14vw;
     cursor: pointer;
     border-radius: 10vw;
     cursor: pointer;
@@ -65,7 +65,7 @@ input[type="checkbox"]:checked+.ht-ui-check .handle .faces {
 .ht-ui-check .track {
     display: block;
     width: 21.5vw;
-    height: 12.5vw;
+    height: 10.5vw;
     background: #5e5f56;
 }
 
